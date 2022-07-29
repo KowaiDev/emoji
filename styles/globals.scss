@@ -1,0 +1,40 @@
+:root {
+  --main: #ff0092;
+}
+
+/* Dark theme. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: rgba(024, 025, 028, 001);
+    --color: rgba(255, 255, 255, 001);
+    --lvlup: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Light theme. */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: rgba(255, 255, 255, 001);
+    --color: rgba(000, 000, 000, 001);
+    --lvlup: rgba(000, 000, 000, 0.1);
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui;
+  background: var(--background);
+  color: var(--color);
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
